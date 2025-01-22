@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+}
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input,button,textarea{font-family:inherit;}
+
+/*--------------------*/
+
+body{
+    font-family: "Tektur", serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100vh;
+
+    background-image: url(fonMac.jpg);
+    background-size: cover;
+}
+
+
+.kalkulator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: rgb(24, 24, 24, 0.9);
+
+    border: 1px solid;
+    border-radius: 6px;
+    border-color: rgb(192, 3, 255);
+    box-shadow: 0 0 50px rgb(192, 3, 255);
+
+    padding: 30px 50px;
+}
+
+.kalkulator__form {
+    width: 355px;
+}
+
+.form__inputs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.num{
+    width: 170px;
+    height: 40px;
+
+    padding: 5px;
+    margin-bottom: 20px;
+
+    border: 1px solid black;
+    border-radius: 3px;
+
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    transition: 0.3s;
+}
+
+input:hover{
+    border-color: rgb(192, 3, 255);
+    box-shadow: 0 0 10px rgb(192, 3, 255);
+}
+
+input:focus {
+    border-color: rgb(192, 3, 255);
+    box-shadow: 0 0 10px rgb(192, 3, 255);
+}
+
+.form__btn {
+    width: 100%;
+    height: 40px;
+
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+
+    border: 1px solid black;
+    border-radius: 3px;
+    
+    background: rgba(0, 0, 0, 0.7);
+
+    transition: 0.3s;
+    
+}
+
+.form__btn:hover{
+    border-color: rgb(192, 3, 255);
+    box-shadow: 0 0 10px rgb(192, 3, 255);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.form__btn:active{
+    border-color: rgb(48, 1, 66);
+    box-shadow: 0 0 0px rgb(192, 3, 255);
+}
+
+
+.kalkulator__result{
+    width: 350px;
+    min-height: 35px;
+
+    padding: 5px;
+
+    border: 2dvb solid rgb(12, 12, 12);
+
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    
+    background: rgba(0, 0, 0, 0.4);
+}
